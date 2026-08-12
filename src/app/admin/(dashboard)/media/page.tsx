@@ -1,0 +1,4 @@
+import Image from "next/image"; import { AdminHeader, Stat } from "@/components/admin/admin-ui";
+import { MediaUpload } from "@/components/admin/media-upload";
+const images=["hero-products-placeholder-v1.png","company-craft-placeholder-v1.png","product-catalog-placeholder-v1.png","custom-development-placeholder-v1.png"];
+export default function MediaAdmin(){return <><AdminHeader eyebrow="ASSETS" title="媒体库" description="JPG、PNG、WebP，单图最大 10 MB；上传后生成响应式版本。" actions={<MediaUpload/>}/><div className="admin-stats"><Stat label="全部素材" value={images.length}/><Stat label="设计占位" value={images.length}/><Stat label="待替换" value={images.length}/></div><div className="media-grid">{images.map((image)=><figure key={image}><Image alt="设计占位素材" height={240} src={`/images/${image}`} width={320}/><figcaption><b>{image}</b><span>设计占位 · 正式发布前替换</span></figcaption></figure>)}</div></>}

@@ -1,0 +1,135 @@
+{
+  "version": "v1",
+  "source": "双芙产品画册确认信息",
+  "products": [
+    {
+      "slug": "teardrop-cup-pad",
+      "category": "bra-pads",
+      "sortOrder": 1,
+      "translations": {
+        "zh": { "name": "水滴形状款", "summary": "展示透气孔与自然承托。", "description": "水滴形状款展示透气孔与自然承托。" },
+        "en": { "name": "Teardrop Cup Pad", "summary": "Shows ventilation holes and natural support.", "description": "The teardrop cup pad shows ventilation holes and natural support." },
+        "ar": { "name": "حشوة صدر بشكل قطرة", "summary": "تُظهر فتحات تهوية ودعمًا طبيعيًا.", "description": "تُظهر حشوة الصدر بشكل قطرة فتحات تهوية ودعمًا طبيعيًا." }
+      },
+      "images": [{ "fileName": "teardrop-cup-pad-01.webp", "alt": { "zh": "水滴形状款", "en": "Teardrop Cup Pad", "ar": "حشوة صدر بشكل قطرة" } }],
+      "specifications": []
+    },
+    {
+      "slug": "separate-oval-cup-pad",
+      "category": "bra-pads",
+      "sortOrder": 2,
+      "translations": {
+        "zh": { "name": "分体式椭圆形杯罩", "summary": "展示 S/M、L/XL 尺寸组。", "description": "分体式椭圆形杯罩展示 S/M、L/XL 尺寸组。" },
+        "en": { "name": "Separate Oval Cup Pad", "summary": "Shows S/M and L/XL size groups.", "description": "The separate oval cup pad shows S/M and L/XL size groups." },
+        "ar": { "name": "حشوة صدر بيضاوية منفصلة", "summary": "تُظهر مجموعات المقاسات S/M وL/XL.", "description": "تُظهر حشوة الصدر البيضاوية المنفصلة مجموعات المقاسات S/M وL/XL." }
+      },
+      "images": [{ "fileName": "separate-oval-cup-pad-01.webp", "alt": { "zh": "分体式椭圆形杯罩", "en": "Separate Oval Cup Pad", "ar": "حشوة صدر بيضاوية منفصلة" } }],
+      "specifications": [{ "label": { "zh": "尺寸组", "en": "Size groups", "ar": "مجموعات المقاسات" }, "value": { "zh": "S/M、L/XL", "en": "S/M, L/XL", "ar": "S/M، L/XL" } }]
+    },
+    {
+      "slug": "separate-round-cup-pad",
+      "category": "bra-pads",
+      "sortOrder": 3,
+      "translations": {
+        "zh": { "name": "分体式圆形杯罩", "summary": "强调薄边轮廓。", "description": "分体式圆形杯罩强调薄边轮廓。" },
+        "en": { "name": "Separate Round Cup Pad", "summary": "Emphasizes a thin edge.", "description": "The separate round cup pad emphasizes a thin edge." },
+        "ar": { "name": "حشوة صدر دائرية منفصلة", "summary": "تؤكد على حافة رفيعة.", "description": "تؤكد حشوة الصدر الدائرية المنفصلة على حافة رفيعة." }
+      },
+      "images": [{ "fileName": "separate-round-cup-pad-01.webp", "alt": { "zh": "分体式圆形杯罩", "en": "Separate Round Cup Pad", "ar": "حشوة صدر دائرية منفصلة" } }],
+      "specifications": []
+    },
+    {
+      "slug": "camisole-cup",
+      "category": "cups",
+      "sortOrder": 4,
+      "translations": {
+        "zh": { "name": "吊带杯", "summary": "展示吊带杯轮廓。", "description": "吊带杯以画册图片展示其轮廓。" },
+        "en": { "name": "Camisole / Spaghetti-Strap Cup", "summary": "Shows the camisole cup silhouette.", "description": "The camisole cup silhouette is shown in the catalog imagery." },
+        "ar": { "name": "كوب لحمالات الكتف الرفيعة", "summary": "يُظهر شكل كوب الحمالات الرفيعة.", "description": "يُعرض شكل كوب الحمالات الرفيعة في صور الكتالوج." }
+      },
+      "images": [{ "fileName": "camisole-cup-01.webp", "alt": { "zh": "吊带杯", "en": "Camisole / Spaghetti-Strap Cup", "ar": "كوب لحمالات الكتف الرفيعة" } }],
+      "specifications": []
+    },
+    {
+      "slug": "semi-circular-cup-pad",
+      "category": "cups",
+      "sortOrder": 5,
+      "translations": {
+        "zh": { "name": "半圆型", "summary": "展示半圆型轮廓。", "description": "半圆型以画册图片展示其轮廓。" },
+        "en": { "name": "Semi-Circular Cup Pad", "summary": "Shows a semi-circular silhouette.", "description": "The semi-circular silhouette is shown in the catalog imagery." },
+        "ar": { "name": "حشوة صدر نصف دائرية", "summary": "تُظهر شكلًا نصف دائريًا.", "description": "يُعرض الشكل النصف دائري في صور الكتالوج." }
+      },
+      "images": [{ "fileName": "semi-circular-cup-pad-01.webp", "alt": { "zh": "半圆型", "en": "Semi-Circular Cup Pad", "ar": "حشوة صدر نصف دائرية" } }],
+      "specifications": []
+    },
+    {
+      "slug": "fabric-wrapped-cup-pad",
+      "category": "cups",
+      "sortOrder": 6,
+      "translations": {
+        "zh": { "name": "包布杯", "summary": "展示 S 至 5XL 尺寸范围。", "description": "包布杯展示 S 至 5XL 尺寸范围。" },
+        "en": { "name": "Fabric-Wrapped Cup Pad", "summary": "Shows sizes from S to 5XL.", "description": "The fabric-wrapped cup pad shows sizes from S to 5XL." },
+        "ar": { "name": "حشوة صدر مكسوة بالقماش", "summary": "تُظهر مقاسات من S إلى 5XL.", "description": "تُظهر حشوة الصدر المكسوة بالقماش مقاسات من S إلى 5XL." }
+      },
+      "images": [{ "fileName": "fabric-wrapped-cup-pad-01.webp", "alt": { "zh": "包布杯", "en": "Fabric-Wrapped Cup Pad", "ar": "حشوة صدر مكسوة بالقماش" } }],
+      "specifications": [{ "label": { "zh": "尺寸范围", "en": "Size range", "ar": "نطاق المقاسات" }, "value": { "zh": "S 至 5XL", "en": "S to 5XL", "ar": "S إلى 5XL" } }]
+    },
+    {
+      "slug": "separate-triangular-cup-pad",
+      "category": "bra-pads",
+      "sortOrder": 7,
+      "translations": {
+        "zh": { "name": "分体三角形杯罩", "summary": "展示约 10.5 cm 边长和约 2.2 cm 厚度。", "description": "分体三角形杯罩展示约 10.5 cm 边长和约 2.2 cm 厚度。" },
+        "en": { "name": "Separate Triangular Cup Pad", "summary": "Shows an approximately 10.5 cm side length and approximately 2.2 cm thickness.", "description": "The separate triangular cup pad shows an approximately 10.5 cm side length and approximately 2.2 cm thickness." },
+        "ar": { "name": "حشوة صدر مثلثة منفصلة", "summary": "تُظهر طول ضلع يقارب 10.5 سم وسماكة تقارب 2.2 سم.", "description": "تُظهر حشوة الصدر المثلثة المنفصلة طول ضلع يقارب 10.5 سم وسماكة تقارب 2.2 سم." }
+      },
+      "images": [{ "fileName": "separate-triangular-cup-pad-01.webp", "alt": { "zh": "分体三角形杯罩", "en": "Separate Triangular Cup Pad", "ar": "حشوة صدر مثلثة منفصلة" } }],
+      "specifications": [
+        { "label": { "zh": "边长", "en": "Side length", "ar": "طول الضلع" }, "value": { "zh": "约 10.5 cm", "en": "Approximately 10.5 cm", "ar": "حوالي 10.5 سم" } },
+        { "label": { "zh": "厚度", "en": "Thickness", "ar": "السماكة" }, "value": { "zh": "约 2.2 cm", "en": "Approximately 2.2 cm", "ar": "حوالي 2.2 سم" } }
+      ]
+    },
+    {
+      "slug": "thin-top-thick-bottom-cup-pad",
+      "category": "bra-pads",
+      "sortOrder": 8,
+      "translations": {
+        "zh": { "name": "上薄下厚款", "summary": "展示 4 个轮廓。", "description": "上薄下厚款以画册图片展示 4 个轮廓。" },
+        "en": { "name": "Thin-Top Thick-Bottom Cup Pad", "summary": "Shows four silhouettes.", "description": "The thin-top thick-bottom cup pad shows four silhouettes in the catalog imagery." },
+        "ar": { "name": "حشوة رفيعة من الأعلى وسميكة من الأسفل", "summary": "تُظهر أربعة أشكال.", "description": "تُظهر الحشوة الرفيعة من الأعلى والسميكة من الأسفل أربعة أشكال في صور الكتالوج." }
+      },
+      "images": [{ "fileName": "thin-top-thick-bottom-cup-pad-01.webp", "alt": { "zh": "上薄下厚款", "en": "Thin-Top Thick-Bottom Cup Pad", "ar": "حشوة رفيعة من الأعلى وسميكة من الأسفل" } }],
+      "specifications": [{ "label": { "zh": "轮廓", "en": "Silhouettes", "ar": "الأشكال" }, "value": { "zh": "4 个", "en": "4", "ar": "4" } }]
+    },
+    {
+      "slug": "size-80-full-coverage-cup-pad",
+      "category": "cups",
+      "sortOrder": 9,
+      "translations": {
+        "zh": { "name": "80# 半圆满型", "summary": "展示 80# 半圆满型轮廓。", "description": "80# 半圆满型以画册图片展示其轮廓。" },
+        "en": { "name": "80# Semi-Circular Full-Coverage Cup Pad", "summary": "Shows an 80# semi-circular full-coverage silhouette.", "description": "The 80# semi-circular full-coverage silhouette is shown in the catalog imagery." },
+        "ar": { "name": "حشوة صدر نصف دائرية بتغطية كاملة مقاس 80", "summary": "تُظهر شكلًا نصف دائريًا بتغطية كاملة مقاس 80.", "description": "يُعرض الشكل النصف دائري بتغطية كاملة مقاس 80 في صور الكتالوج." }
+      },
+      "images": [{ "fileName": "size-80-full-coverage-cup-pad-01.webp", "alt": { "zh": "80# 半圆满型", "en": "80# Semi-Circular Full-Coverage Cup Pad", "ar": "حشوة صدر نصف دائرية بتغطية كاملة مقاس 80" } }],
+      "specifications": []
+    },
+    {
+      "slug": "integrated-cup-pad",
+      "category": "cups",
+      "sortOrder": 10,
+      "translations": {
+        "zh": { "name": "连体杯", "summary": "展示 M/L 及 25 cm、27.5 cm 等明确尺寸。", "description": "连体杯以两页画册图片展示 M/L 及 25 cm、27.5 cm 等明确尺寸。" },
+        "en": { "name": "Integrated Cup Pad", "summary": "Shows M/L and stated dimensions including 25 cm and 27.5 cm.", "description": "The integrated cup pad uses two catalog spreads to show M/L and stated dimensions including 25 cm and 27.5 cm." },
+        "ar": { "name": "حشوة صدر متصلة", "summary": "تُظهر M/L وأبعادًا محددة تشمل 25 سم و27.5 سم.", "description": "تستخدم حشوة الصدر المتصلة صفحتي كتالوج لإظهار M/L وأبعاد محددة تشمل 25 سم و27.5 سم." }
+      },
+      "images": [
+        { "fileName": "integrated-cup-pad-01.webp", "alt": { "zh": "连体杯画册图 1", "en": "Integrated Cup Pad catalog image 1", "ar": "صورة كتالوج حشوة الصدر المتصلة 1" } },
+        { "fileName": "integrated-cup-pad-02.webp", "alt": { "zh": "连体杯画册图 2", "en": "Integrated Cup Pad catalog image 2", "ar": "صورة كتالوج حشوة الصدر المتصلة 2" } }
+      ],
+      "specifications": [
+        { "label": { "zh": "尺寸", "en": "Sizes", "ar": "المقاسات" }, "value": { "zh": "M/L", "en": "M/L", "ar": "M/L" } },
+        { "label": { "zh": "明确尺寸", "en": "Stated dimensions", "ar": "الأبعاد المحددة" }, "value": { "zh": "25 cm、27.5 cm", "en": "25 cm, 27.5 cm", "ar": "25 سم، 27.5 سم" } }
+      ]
+    }
+  ]
+}

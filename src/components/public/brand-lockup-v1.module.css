@@ -1,0 +1,43 @@
+.lockup {
+  align-items: center;
+  direction: ltr;
+  display: flex;
+  flex-shrink: 0;
+  gap: 12px;
+}
+
+.symbol {
+  height: auto;
+  width: 46px;
+}
+
+.wordmark {
+  height: auto;
+  object-fit: contain;
+}
+
+.wordmarkZh {
+  width: 58px;
+}
+
+.wordmarkEn {
+  width: 112px;
+}
+
+@media (max-width: 520px) {
+  .lockup {
+    gap: 8px;
+  }
+
+  .symbol {
+    width: 38px;
+  }
+
+  .wordmarkZh {
+    width: 48px;
+  }
+
+  .wordmarkEn {
+    width: 92px;
+  }
+}

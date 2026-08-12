@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+coverage/
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example
+.vercel/
+.superpowers/
+*.log
+*.tsbuildinfo
+.DS_Store
+artifacts/product-import-v1.0/*.json

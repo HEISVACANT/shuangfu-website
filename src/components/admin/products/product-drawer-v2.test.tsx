@@ -253,6 +253,40 @@ describe("ProductDrawerV2", () => {
     expect(screen.getByRole("tabpanel")).toHaveAttribute("aria-labelledby", "product-locale-tab-en");
   });
 
+  it("keeps translation and specification values isolated across locale switches", async () => {
+    const user = userEvent.setup();
+    render(<Harness />);
+
+    await user.click(screen.getByRole("button", { name: "新建产品" }));
+    await user.type(screen.getByRole("textbox", { name: "产品名称" }), "验收胸垫");
+    await user.click(screen.getByRole("button", { name: "添加规格" }));
+    await user.type(screen.getByRole("textbox", { name: "规格名称 1" }), "厚度");
+    await user.type(screen.getByRole("textbox", { name: "规格值 1" }), "10 毫米");
+
+    await user.click(screen.getByRole("tab", { name: "English" }));
+    expect(screen.getByRole("textbox", { name: "产品名称" })).toHaveValue("");
+    expect(screen.getByRole("textbox", { name: "规格名称 1" })).toHaveValue("");
+    await user.type(screen.getByRole("textbox", { name: "产品名称" }), "QA Bra Pad");
+    await user.type(screen.getByRole("textbox", { name: "规格名称 1" }), "Thickness");
+    await user.type(screen.getByRole("textbox", { name: "规格值 1" }), "10 mm");
+
+    await user.click(screen.getByRole("tab", { name: "العربية" }));
+    expect(screen.getByRole("textbox", { name: "产品名称" })).toHaveValue("");
+    await user.type(screen.getByRole("textbox", { name: "产品名称" }), "وسادة اختبار");
+    await user.type(screen.getByRole("textbox", { name: "规格名称 1" }), "السماكة");
+    await user.type(screen.getByRole("textbox", { name: "规格值 1" }), "10 مم");
+
+    await user.click(screen.getByRole("tab", { name: "中文" }));
+    expect(screen.getByRole("textbox", { name: "产品名称" })).toHaveValue("验收胸垫");
+    expect(screen.getByRole("textbox", { name: "规格名称 1" })).toHaveValue("厚度");
+    expect(screen.getByRole("textbox", { name: "规格值 1" })).toHaveValue("10 毫米");
+
+    await user.click(screen.getByRole("tab", { name: "English" }));
+    expect(screen.getByRole("textbox", { name: "产品名称" })).toHaveValue("QA Bra Pad");
+    expect(screen.getByRole("textbox", { name: "规格名称 1" })).toHaveValue("Thickness");
+    expect(screen.getByRole("textbox", { name: "规格值 1" })).toHaveValue("10 mm");
+  });
+
   it("keeps values after action errors, switches locale, and focuses the first field error", async () => {
     const user = userEvent.setup();
     const saveAction = vi.fn<(input: unknown) => Promise<ProductActionResult>>().mockResolvedValue({

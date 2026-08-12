@@ -378,6 +378,7 @@ export function ProductDrawerV2({
                 aria-labelledby={`product-locale-tab-${activeLocale}`}
                 dir={activeLocale === "ar" ? "rtl" : "ltr"}
                 id={`product-locale-panel-${activeLocale}`}
+                key={activeLocale}
                 role="tabpanel"
                 style={{ display: "grid", gap: 16, gridColumn: "1 / -1", gridTemplateColumns: "1fr 1fr" }}
               >

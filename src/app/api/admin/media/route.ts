@@ -1,5 +1,4 @@
 import { randomUUID } from "node:crypto";
-import sharp from "sharp";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 
@@ -64,7 +63,7 @@ export async function POST(request:Request){
   const {data:{user}}=await supabase.auth.getUser(); if(!user)return NextResponse.json({code:"UNAUTHORIZED"},{status:401});
   const {data:allowed}=await supabase.rpc("has_permission",{p_resource:"media",p_action:"create"}); if(!allowed)return NextResponse.json({code:"FORBIDDEN"},{status:403});
   const file=(await request.formData()).get("file"); if(!(file instanceof File)||!accepted.has(file.type)||file.size<=0||file.size>maxBytes)return NextResponse.json({code:"INVALID_IMAGE"},{status:400});
-  const source=Buffer.from(await file.arrayBuffer()); const metadata=await sharp(source).metadata(); if(!metadata.width||!metadata.height)return NextResponse.json({code:"INVALID_IMAGE"},{status:400});
+  const source=Buffer.from(await file.arrayBuffer()); const sharp=(await import("sharp")).default; const metadata=await sharp(source).metadata(); if(!metadata.width||!metadata.height)return NextResponse.json({code:"INVALID_IMAGE"},{status:400});
   const id=randomUUID(); const variants:Record<string,string>={};
   for(const width of [480,960,1600].filter(value=>value<=metadata.width!)){const output=await sharp(source).rotate().resize({width,withoutEnlargement:true}).webp({quality:84}).toBuffer();const path=`${id}/${width}.webp`;const {error}=await supabase.storage.from("media").upload(path,output,{contentType:"image/webp",upsert:false});if(error)return NextResponse.json({code:"UPLOAD_FAILED"},{status:500});variants[String(width)]=supabase.storage.from("media").getPublicUrl(path).data.publicUrl;}
   const originalPath=`${id}/original.${file.type.split("/")[1]}`; const {error:uploadError}=await supabase.storage.from("media").upload(originalPath,source,{contentType:file.type,upsert:false});if(uploadError)return NextResponse.json({code:"UPLOAD_FAILED"},{status:500});

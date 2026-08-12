@@ -1,0 +1,3 @@
+export function AdminHeader({ eyebrow, title, description, actions }: { eyebrow: string; title: string; description: string; actions?: React.ReactNode }) { return <header className="admin-header"><div className="admin-header-copy"><p>{eyebrow}</p><h1>{title}</h1><span>{description}</span></div>{actions ? <div className="admin-header-actions">{actions}</div> : null}</header>; }
+export function Stat({ label, value }: { label: string; value: string | number }) { return <div className="admin-stat"><span>{label}</span><strong>{value}</strong></div>; }
+export function Status({ children, tone="draft" }: { children: React.ReactNode; tone?: string }) { return <span className={`status status-${tone}`}>{children}</span>; }
